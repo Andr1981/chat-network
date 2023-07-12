@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="600.0" style="-fx-background-color: #483D8B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.parfandr.controllers.RegistrationController">
+    <children>
+        <AnchorPane layoutY="95.0" prefHeight="340.0" prefWidth="783.0" style="-fx-background-color: #F5DEB3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0">
+            <children>
+                <Label layoutX="177.0" layoutY="30.0" prefHeight="53.0" prefWidth="251.0" text="Авторизация" textFill="#0f0f68" AnchorPane.topAnchor="30.0">
+                    <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="loginInputField" layoutX="14.0" layoutY="99.0" prefHeight="30.0" prefWidth="242.0" promptText="Login" AnchorPane.topAnchor="99.0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="passwordInputField" layoutX="344.0" layoutY="99.0" prefHeight="35.0" prefWidth="242.0" promptText="Password" AnchorPane.topAnchor="99.0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="registrationEntryButton" layoutX="207.0" layoutY="273.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="192.0" text="Зарегестрироваться" AnchorPane.topAnchor="273.0">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="nameInputField" layoutX="14.0" layoutY="150.0" prefHeight="30.0" prefWidth="242.0" promptText="Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lastnameInputField" layoutX="344.0" layoutY="150.0" prefHeight="30.0" prefWidth="242.0" promptText="Lastname">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="countryInputField" layoutX="182.0" layoutY="211.0" prefHeight="30.0" prefWidth="242.0" promptText="Country">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            </children>
+        </AnchorPane>
+        <Label layoutX="22.0" layoutY="25.0" prefHeight="52.0" prefWidth="165.0" text="NetworkChat" textFill="WHITE" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="25.0">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
