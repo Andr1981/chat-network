@@ -64,9 +64,5 @@ public class Users {
         this.country = country;
     }
 
-    @Override
-    public String toString() {
-        return String.format("пароль - %s, имя - %s, фамилия - %s, страна - %s",
-               password, name, lastname, country);
-    }
+
 }

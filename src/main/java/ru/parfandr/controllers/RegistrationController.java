@@ -33,32 +33,36 @@ public class RegistrationController {
 
     @FXML
     void initialize() {
-
         registrationEntryButton.setOnAction(event -> {
             String login = loginInputField.getCharacters().toString();
             String password = passwordInputField.getCharacters().toString();
             String name = nameInputField.getCharacters().toString();
             String lastname = lastnameInputField.getCharacters().toString();
             String country = countryInputField.getCharacters().toString();
-            Users users = new Users(login, password, name, lastname, country);
+            ifDataValid(login, password, name, lastname, country);
+
+        });
+
+    }
+
+    public void ifDataValid(String log, String pass, String name, String lastname, String country) {
+        if (log.equals("") || pass.equals("") || name.equals("") || lastname.equals("") || country.equals("")) {
+            System.out.println("No valid");
+        } else {
+            Users users = new Users(log, pass, name, lastname, country);
             ArrayList<String> userData = new ArrayList<>();
-            userData.add(password);
+            userData.add(pass);
             userData.add(name);
             userData.add(lastname);
             userData.add(country);
-            users.regUserData.put(login, userData);
-            printMapUsers(users.regUserData);
+            users.regUserData.put(log, userData);
 
-        });
+        }
+
 
     }
 
-    private void printMapUsers(Map<String, ArrayList<String>> regUserData) {
-        regUserData.entrySet().forEach(entry->{
-            System.out.println("Login - " + entry.getKey());
-            System.out.println("Value - " + entry.getValue());
-        });
-    }
+
 }
 
 
