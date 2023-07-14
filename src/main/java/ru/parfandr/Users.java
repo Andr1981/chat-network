@@ -10,19 +10,15 @@ public class Users {
     private String name;
     private String lastname;
     private String country;
-    public Map<String, ArrayList<String>> regUserData = new HashMap<>();
+    public static Map<String, ArrayList<Users>> regUserData = new HashMap<>();
 
-    public Users(String login, String password, String name, String lastname, String country) {
-        this.login = login;
+    public Users(String password, String name, String lastname, String country) {
         this.password = password;
         this.name = name;
         this.lastname = lastname;
         this.country = country;
     }
 
-    public Users() {
-
-    }
 
     public String getLogin() {
         return login;
